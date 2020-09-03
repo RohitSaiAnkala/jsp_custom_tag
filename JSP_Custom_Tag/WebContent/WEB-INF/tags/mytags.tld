@@ -8,11 +8,20 @@
 	<tlib-version>1.0</tlib-version>
 	<jsp-version>1.2</jsp-version>
 	<short-name>simple</short-name>
-	<uri>http://taglib.com/taglib</uri>
+	<uri>http://tomcat.apache.org/example-taglib</uri>
 
 	<tag>
 		<name>tag1</name>
 		<tag-class>com.tagHandler.SimpleTagHandler</tag-class>
+	</tag>
+	
+	<tag>
+	<name>tag_attr</name>
+	<tag-class>com.tagHandler.AttributeTagHandler</tag-class>
+	<attribute>
+	<name>name</name>
+	<required>true</required>
+	</attribute>
 	</tag>
 
 </taglib>  
