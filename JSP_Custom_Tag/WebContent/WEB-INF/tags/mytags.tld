@@ -8,7 +8,7 @@
 	<tlib-version>1.0</tlib-version>
 	<jsp-version>1.2</jsp-version>
 	<short-name>simple</short-name>
-	<uri>http://tomcat.apache.org/example-taglib</uri>
+	<uri>http://taglib.com/taglib</uri>
 
 	<tag>
 		<name>tag1</name>
@@ -23,5 +23,42 @@
 	<required>true</required>
 	</attribute>
 	</tag>
-
+	<tag>
+	<name>loop</name>
+	<tag-class>com.tagHandler.IteratorTagHandler</tag-class>
+	
+	 <attribute>
+      <name>start</name>
+      <required>true</required>
+    </attribute>
+    
+    <attribute>
+      <name>end</name>
+      <required>true</required>
+    </attribute>
+	</tag>
+	
+	<tag>
+	<name>triangleArea</name>
+	<tag-class>com.tagHandler.TriangleAreaHandler</tag-class>
+	
+	<attribute>
+	<name>base</name>
+	<required>true</required>
+	</attribute>
+	<attribute>
+	<name>height</name>
+	<required>true</required>
+	</attribute>
+	
+	</tag>
+	
+	<tag>
+	<name>square</name>
+	<tag-class>com.tagHandler.SquareHandler</tag-class>
+	<attribute>
+	<name>side</name>
+	<required>true</required>
+	</attribute>
+	</tag>
 </taglib>  

@@ -9,6 +9,7 @@
 <body>
 <a href="simpleTag.jsp">Simple Tag Demo</a><br/>
 <a href="attrTag.jsp">Attribute Tag Demo</a><br/>
+<a href="itrTag.jsp">Iterator Demo</a>
 
 </body>
 </html>
